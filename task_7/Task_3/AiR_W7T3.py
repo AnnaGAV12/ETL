@@ -38,7 +38,7 @@ def openwear_check_temp(ti):
 
 with DAG(
         'Tyumen_check_temperature_warm_or_cold',
-        start_date=datetime(2024, 4, 25),
+        start_date=datetime(2024, 12, 02),
         catchup=False,
         tags=['W7T3'],
 ) as dag:

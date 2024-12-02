@@ -9,7 +9,7 @@ import pendulum
 default_args = {
 'owner': 'Ritorta',
 'depends_on_past': False,
-'start_date': pendulum.datetime(year=2024, month=4, day=25).in_timezone('Europe/Moscow'),
+'start_date': pendulum.datetime(year=2024, month=12, day=02).in_timezone('Europe/Moscow'),
 'email': ['meddesu@yandex.ru'],
 'email_on_failure': False,
 'email_on_retry': False,

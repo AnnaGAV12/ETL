@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 default_args = {
 'owner': 'Ritorta',
 'depends_on_past': False,
-'start_date': pendulum.datetime(year=2024, month=4, day=25).in_timezone('Europe/Moscow'),
+'start_date': pendulum.datetime(year=2024, month=12, day=02).in_timezone('Europe/Moscow'),
 'email': ['meddesu@yandex.ru'],
 'email_on_failure': False,
 'email_on_retry': False,
@@ -76,7 +76,7 @@ def openwear_check_temp(ti):
 
 with DAG(
         'Tyumen_check_temperature_warm_or_cold',
-        start_date=datetime(2024, 4, 25),
+        start_date=datetime(2024, 12, 02),
         catchup=False,
         tags=['W7T3'],
 ) as dag:
